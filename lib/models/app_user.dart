@@ -37,6 +37,7 @@ class AppUser extends JsonModel {
         timezone,
         timezoneId,
         identityCode,
+        name,
       ];
 
   /// The user ID.
@@ -56,6 +57,9 @@ class AppUser extends JsonModel {
 
   /// The user"s display name.
   JsonString displayName = JsonString("displayName");
+
+  /// The user"s name name.
+  JsonString name = JsonString("name");
 
   /// The user"s phone number.
   JsonString phone = JsonString("phone");
